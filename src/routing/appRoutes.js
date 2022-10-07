@@ -7,7 +7,7 @@ export const AppRoutes = () => (
   <BrowserRouter>
     <Sidebar>
       <Routes>
-        <Route path='/' element={<General />} />
+        <Route path='/*' element={<General />} />
         <Route path='/details/:id' element={<Details />} />
       </Routes>
     </Sidebar>

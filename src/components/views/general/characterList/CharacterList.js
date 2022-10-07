@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux'
 import { dataState } from '../../../../features/dataSlice/dataSlice'
 import { filtersState } from '../../../../features/filtersSlice/filtersSlice'
 import { paginationState } from '../../../../features/paginationSlice/paginationSlice'
+import SentimentVeryDissatisfiedIcon from '@mui/icons-material/SentimentVeryDissatisfied'
 import Character from '../character/Character'
 import Pagination from './pagination/Pagination'
 import Progress from '../../../common/progress/Progress'
@@ -26,12 +27,11 @@ function CharacterList() {
     return true
   }
 
-  console.log('LOAD', loading)
   return (
     <div className='character-list'>
       {loading ? (
         <Progress />
-      ) : (
+      ) : filteredCharacters.length > 0 ? (
         <>
           <div className='character-list-container'>
             {filteredCharacters.slice(startRecords, endRecords).map((character) => (
@@ -40,6 +40,13 @@ function CharacterList() {
           </div>
           <Pagination numberOfRecords={numberOfRecords} />
         </>
+      ) : (
+        <div className='no-data'>
+          Unfortunately, there is no such character
+          <div className='icon'>
+            <SentimentVeryDissatisfiedIcon />
+          </div>
+        </div>
       )}
     </div>
   )

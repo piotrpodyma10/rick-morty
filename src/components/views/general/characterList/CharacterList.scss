@@ -9,4 +9,14 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  .no-data {
+    color: var(--light-dark);
+    font-size: 16px;
+
+    .icon {
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
 }
