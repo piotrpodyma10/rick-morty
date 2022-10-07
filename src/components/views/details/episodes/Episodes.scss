@@ -1,0 +1,24 @@
+.episodes {
+  padding: 30px;
+
+  .tabs {
+    padding-bottom: 30px;
+    .MuiTabs-scroller {
+      overflow: auto !important;
+    }
+  }
+
+  .MuiButtonBase-root {
+    color: var(--light-dark);
+    padding-bottom: 20px;
+
+    &.Mui-selected {
+      color: var(--green);
+    }
+  }
+
+  .MuiTabs-indicator {
+    background-color: var(--green);
+    margin-bottom: 10px;
+  }
+}

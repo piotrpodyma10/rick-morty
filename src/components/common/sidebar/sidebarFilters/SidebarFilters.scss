@@ -1,0 +1,37 @@
+.sidebar-filters {
+  display: flex;
+  flex-direction: column;
+
+  .filter {
+    margin: 10px;
+  }
+
+  .MuiInputBase-root,
+  .MuiInputBase-root.Mui-focused {
+    color: var(--white);
+    color: var(--green);
+
+    .MuiOutlinedInput-notchedOutline {
+      border-color: var(--white);
+    }
+
+    &:hover {
+      .MuiOutlinedInput-notchedOutline {
+        border-color: var(--white);
+      }
+    }
+
+    .MuiSvgIcon-root {
+      color: var(--white);
+    }
+  }
+
+  .MuiOutlinedInput-notchedOutline {
+    border-color: var(--white);
+  }
+
+  .MuiInputLabel-root,
+  .MuiInputLabel-root.Mui-focused {
+    color: var(--white);
+  }
+}

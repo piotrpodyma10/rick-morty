@@ -1,0 +1,12 @@
+.character-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .character-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

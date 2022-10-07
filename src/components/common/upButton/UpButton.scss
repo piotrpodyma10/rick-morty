@@ -1,0 +1,20 @@
+body {
+  .up-button {
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+    color: var(--green);
+    animation: showUp 0.5s;
+  }
+}
+
+@keyframes showUp {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

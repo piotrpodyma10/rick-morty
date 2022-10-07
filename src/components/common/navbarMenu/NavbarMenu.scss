@@ -1,0 +1,19 @@
+body {
+  .navbar-menu {
+    background-color: var(--darker-light);
+    box-shadow: none;
+    .action-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px;
+      img {
+        width: 200px;
+      }
+
+      .toggle-icon {
+        color: var(--light-dark);
+        margin-left: 10px;
+      }
+    }
+  }
+}

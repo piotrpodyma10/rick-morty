@@ -1,0 +1,15 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+
+  .MuiButtonBase-root,
+  svg {
+    color: var(--light-dark);
+
+    :hover {
+      color: var(--light-dark);
+    }
+  }
+}

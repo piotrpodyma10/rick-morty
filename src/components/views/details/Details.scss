@@ -1,0 +1,39 @@
+$medium: 800px;
+
+.details {
+  .header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px;
+
+    @media screen and (max-width: $medium) {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    img {
+      width: 300px;
+      border-radius: 8px;
+      margin-right: 100px;
+
+      @media screen and (max-width: $medium) {
+        width: unset;
+        margin-right: unset;
+        margin: 10px;
+        max-width: 100%;
+      }
+    }
+
+    .character-info {
+      font-size: 16px;
+      line-height: 40px;
+      color: var(--light-dark);
+
+      .name {
+        font-weight: bold;
+        color: var(--green);
+      }
+    }
+  }
+}
